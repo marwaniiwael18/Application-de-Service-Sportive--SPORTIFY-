@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Pane" prefHeight="470.0" prefWidth="403.0" style="-fx-background-color: #030E14;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.Addcompetiton">
+   <children>
+      <Text fill="WHITE" layoutX="1.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Competition Match" textAlignment="CENTER" wrappingWidth="402.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom match competiton :" />
+      <TextField fx:id="DescText" layoutX="166.0" layoutY="134.0" />
+      <Text fill="WHITE" layoutX="34.0" layoutY="151.0" strokeWidth="0.0" text="Description :" textAlignment="CENTER" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="202.0" stroke="WHITE" strokeWidth="0.0" text="Type" textAlignment="CENTER" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="260.0" stroke="WHITE" strokeWidth="0.0" text="Date" textAlignment="CENTER" />
+      <Button fx:id="save_btn" layoutX="198.0" layoutY="399.0" mnemonicParsing="false" onMouseClicked="#save" text="ENREGISTRER" />
+      <Button fx:id="annuler_btn" layoutX="97.0" layoutY="399.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="26.0" prefWidth="82.0" text="Annuler" />
+      <DatePicker fx:id="Datee" layoutX="167.0" layoutY="242.0" prefHeight="26.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="terrainliste" layoutX="167.0" layoutY="339.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="356.0" stroke="WHITE" strokeWidth="0.0" text="Terrain" textAlignment="CENTER" />
+      <ChoiceBox fx:id="TypeChoice" layoutX="164.0" layoutY="185.0" prefWidth="150.0" />
+      <MFXTextField fx:id="nomText" floatMode="BORDER" layoutX="164.0" layoutY="83.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.6" prefWidth="149.6" promptText="NOM" />
+      <ChoiceBox fx:id="hhChoice" layoutX="179.0" layoutY="296.0" prefHeight="26.0" prefWidth="37.0" />
+      <ChoiceBox fx:id="mmChoice" layoutX="239.0" layoutY="296.0" prefHeight="26.0" prefWidth="37.0" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="314.0" stroke="WHITE" strokeWidth="0.0" text="HEURE" textAlignment="CENTER" />
+      <Text fill="WHITE" layoutX="225.0" layoutY="314.0" stroke="WHITE" strokeWidth="0.0" text=":" textAlignment="CENTER" />   </children>
+</AnchorPane>

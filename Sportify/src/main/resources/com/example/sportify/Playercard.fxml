@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="328.0" scaleShape="false" style="-fx-background-color: #020B14; -fx-background-radius: 10%; -fx-border-color: white; -fx-border-radius: 11%;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.Playercard">
+   <children>
+      <BorderPane disable="true" focusTraversable="true" prefHeight="238.0" prefWidth="226.0" style="-fx-background-radius: 20%; -fx-border-width: 1px; -fx-border-color: #FFFFFF; -fx-background-color: #021405;">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+         <center>
+            <ImageView fx:id="img" fitHeight="198.0" fitWidth="209.0" opacity="0.82" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="https://i.ibb.co/RBQcTBq/2348811.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+         <top>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="6.0" stroke="#e8c27a" strokeType="INSIDE" width="74.0" BorderPane.alignment="TOP_CENTER">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9098039269447327" green="0.7607843279838562" blue="0.47843137383461" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <BorderPane.margin>
+                  <Insets top="-4.0" />
+               </BorderPane.margin>
+            </Rectangle>
+         </top>
+      </BorderPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="nomPlayer" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="WASSIM">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>

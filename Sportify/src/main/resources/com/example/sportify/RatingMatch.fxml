@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.RatingMatchController">
+        <HBox>
+            <Label text="Notez ce match : " />
+            <ImageView fx:id="star1" onMouseClicked="#handleStar1Click" />
+            <ImageView fx:id="star2" onMouseClicked="#handleStar2Click" />
+            <ImageView fx:id="star3" onMouseClicked="#handleStar3Click" />
+            <ImageView fx:id="star4" onMouseClicked="#handleStar4Click" />
+            <ImageView fx:id="star5" onMouseClicked="#handleStar5Click" />
+        </HBox>
+    <Button fx:id="submitButton" layoutX="201.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: transparent;" styleClass="rnd" stylesheets="@Style.css">
+        <graphic>
+            <ImageView fitHeight="47" fitWidth="102">
+                <Image url="rate.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+</VBox>
+
+

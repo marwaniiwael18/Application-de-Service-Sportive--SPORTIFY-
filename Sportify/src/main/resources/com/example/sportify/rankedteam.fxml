@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="906.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.rankedteamcontroller">
+   <children>
+      <ScrollPane layoutX="1.0" layoutY="46.0" prefHeight="410.0" prefWidth="904.0" style="-fx-background-color: transparent;">
+         <content>
+            <VBox fx:id="vboxall" prefHeight="424.0" prefWidth="892.0" spacing="2.0" style="-fx-background-color: transparent;" />
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="892.0" style="-fx-background-color: transparent;">
+         <children>
+            <Label alignment="CENTER" prefHeight="23.0" prefWidth="63.0" text="RANK" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="24.0" prefHeight="23.0" prefWidth="250.0" text="EQUIPE" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="73.0" layoutY="24.0" prefHeight="23.0" prefWidth="292.0" text="POINTS" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="167.0" layoutY="24.0" prefHeight="23.0" prefWidth="308.0" text="NOMBRE DE MATCHS" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

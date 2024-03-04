@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="632.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.ClassementController">
+   <children>
+      <ImageView fitHeight="632.0" fitWidth="1023.0" pickOnBounds="true">
+         <image>
+            <Image url="https://i.ibb.co/ts00Xsh/background-sportify.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="100.0" layoutY="86.0" prefHeight="34.0" prefWidth="319.0">
+         <children>
+            <Button id="redranked" mnemonicParsing="false" onMouseClicked="#SoloButton" prefHeight="50.0" prefWidth="167.0" stylesheets="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/css/stylesheet.css" text="RANKED SOLO">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="redrankedteams" layoutX="167.0" mnemonicParsing="false" onMouseClicked="#EquipeButton" prefHeight="50.0" prefWidth="167.0" stylesheets="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/css/stylesheet.css" text="RANKED EQUIPE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="interfacechange" layoutX="97.0" layoutY="162.0" prefHeight="454.0" prefWidth="904.0" />
+   </children>
+</AnchorPane>

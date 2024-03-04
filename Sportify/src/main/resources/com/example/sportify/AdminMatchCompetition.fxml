@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.CompetitionController">
+    <children>
+            <AnchorPane prefHeight="628.0" prefWidth="992.0" style="-fx-background-color: BLACK;">
+                <children>
+                    <Text fill="WHITE" layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.2297477722168">
+                        <font>
+                            <Font name="Arial" size="18.0" />
+                        </font>
+                    </Text>
+                    <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="628.0" fitWidth="1342.0" layoutX="-303.0" nodeOrientation="INHERIT" opacity="0.55" pickOnBounds="true">
+                        <image>
+                            <Image url="https://i.ibb.co/ts00Xsh/background-sportify.png" />
+                        </image>
+                    </ImageView>
+                    <TableView fx:id="tablecompet" layoutX="93.0" layoutY="154.0" prefHeight="367.0" prefWidth="897.0" style="-fx-background-color: #030E14;">
+                        <columns>
+                            <TableColumn fx:id="col_nom" prefWidth="244.7999725341797" text="NOM MATCH COMPETITION" />
+                            <TableColumn fx:id="col_desc" minWidth="0.0" prefWidth="152.80001831054688" text="DESCRIPTION" />
+                            <TableColumn fx:id="col_type" minWidth="0.0" prefWidth="99.20001220703125" text="TYPE" />
+                            <TableColumn fx:id="col_date" minWidth="0.0" prefWidth="118.39996337890625" text="DATE" />
+                            <TableColumn fx:id="col_heure" prefWidth="103.2000732421875" text="HEURE" />
+                            <TableColumn fx:id="col_edit" prefWidth="176.7999267578125" text="ACTION" />
+                        </columns>
+                        <columnResizePolicy>
+                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                    </TableView>
+                    <Button fx:id="addcompet" layoutX="757.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#AddButton" prefHeight="52.0" prefWidth="174.0" text="Ajouter Competition Match" />
+                </children>
+            </AnchorPane>
+    </children>
+</AnchorPane>

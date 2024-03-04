@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.proprietaireInterfaceController">
+    <children>
+      <AnchorPane fx:id="interfacechanger" layoutY="96.0" prefHeight="632.0" prefWidth="1023.0" />
+
+                          <AnchorPane fx:id="sidebar" layoutX="1023.2" layoutY="96.0" prefHeight="632.0" prefWidth="233.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="1023.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="96.0">
+                  <children>
+                      <Label layoutX="14.0" prefHeight="54.0" prefWidth="143.0" text="NOTIFICATIONS" textAlignment="CENTER" textFill="#707070">
+                          <font>
+                              <Font name="System Bold" size="16.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="357.0" prefHeight="54.0" prefWidth="157.0" text="ABOUT" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="411.0" prefHeight="54.0" prefWidth="157.0" text="CONTACT US" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="461.0" prefHeight="54.0" prefWidth="157.0" text="AIDE" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <TextField layoutX="32.0" layoutY="109.0" prefHeight="27.0" prefWidth="174.0" text="Mark099" />
+                      <TextField layoutX="30.0" layoutY="163.0" prefHeight="26.0" prefWidth="174.0" text="Mark099" />
+                      <Line endX="79.199951171875" layoutX="116.0" layoutY="288.0" startX="-76.0" strokeWidth="2.0">
+                          <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color red="1.0" green="1.0" blue="1.0" />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </stroke>
+                      </Line>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="516.0" prefHeight="54.0" prefWidth="157.0" text="© 2024 Sportify.com" textFill="#7e7f81">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="551.0" prefHeight="54.0" prefWidth="157.0" text="Développé par :  FLAME" textFill="#7e7f81">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <TextField layoutX="32.0" layoutY="54.0" prefHeight="27.0" prefWidth="174.0" text="Mark099" />
+                      <TextField layoutX="30.0" layoutY="212.0" prefHeight="26.0" prefWidth="174.0" text="Mark099" />
+            <Label fx:id="logButton" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="302.0" onMouseClicked="#logoutt" prefHeight="54.0" prefWidth="157.0" text="DECONNEXION" textFill="#64b759">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                  </children>
+         <padding>
+            <Insets left="100.0" top="100.0" />
+         </padding>
+              </AnchorPane>
+              <AnchorPane fx:id="navbar" prefHeight="99.0" prefWidth="1255.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="628.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                  <children>
+                      <Line endX="1195.0" endY="-6.000030517578125" layoutX="60.0" layoutY="102.0" startX="-60.00001525878906" startY="-6.000030517578125" stroke="RED" strokeWidth="2.0" />
+                      <ImageView fx:id="imgprofile" fitHeight="72.0" fitWidth="83.0" layoutX="1028.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" />
+                          </image>
+                      </ImageView>
+                      <Label fx:id="lusername" layoutX="1120.0" layoutY="19.0" prefHeight="37.0" prefWidth="141.0" text="Wassim" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="258.0" layoutY="22.0" onMouseClicked="#backToAccueil" prefHeight="54.0" prefWidth="77.0" text="ACCUEIL" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="competitionButton" layoutX="708.0" layoutY="33.0" onMouseClicked="#competition" prefHeight="35.0" prefWidth="90.0" text="COMPETITION" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="profilebutton" accessibleRole="BUTTON" layoutX="354.0" layoutY="22.0" onMouseClicked="#profilebutton" prefHeight="54.0" prefWidth="71.0" text="PROFILE" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="848.0" layoutY="36.0" onMouseClicked="#gotoEvent" prefHeight="30.0" prefWidth="89.0" text="EVENEMENTS" textFill="#64b759">
+                          <font>
+                              <Font size="14.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="1122.0" layoutY="38.0" prefHeight="38.0" prefWidth="78.0" text="Proprietaire" textAlignment="CENTER" textFill="#246923">
+                          <font>
+                              <Font size="13.0" />
+                          </font>
+                      </Label>
+                      <Line endX="-20.659069061279297" endY="-27.53048324584961" layoutX="258.0" layoutY="61.0" rotate="115.6" startX="-76.0" strokeWidth="2.0">
+                          <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                  <stops>
+                                      <Stop>
+                                          <color>
+                                              <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                          </color>
+                                      </Stop>
+                                      <Stop offset="1.0">
+                                          <color>
+                                              <Color red="1.0" green="1.0" blue="1.0" />
+                                          </color>
+                                      </Stop>
+                                  </stops>
+                              </LinearGradient>
+                          </stroke>
+                      </Line>
+                      <ImageView fitHeight="76.0" fitWidth="122.0" layoutX="39.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="https://i.ibb.co/2jgVfGT/logo-SPORTIFY-resize.png" />
+                          </image>
+                      </ImageView>
+            <Button id="green" fx:id="TerrainButton" layoutX="496.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#gototerrain" prefHeight="38.0" prefWidth="157.0" stylesheets="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/css/stylesheet.css" text="TERRAIN">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+                  </children>
+              </AnchorPane>
+    </children>
+</AnchorPane>

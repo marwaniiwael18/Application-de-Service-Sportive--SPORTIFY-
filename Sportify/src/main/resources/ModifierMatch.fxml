@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@Scene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierMatch">
+    <children>
+        <Label layoutX="39.0" layoutY="100.0" stylesheets="@css.css" text="Nom :" />
+        <TextField fx:id="nomTextField" layoutX="180.0" layoutY="96.0" prefHeight="26.0" prefWidth="179.0" styleClass="Text-field" stylesheets="@Scene.css" />
+        <Label layoutX="39.0" layoutY="145.0" stylesheets="@css.css" text="Type :" />
+        <TextField fx:id="typeTextField" layoutX="180.0" layoutY="146.0" prefHeight="26.0" prefWidth="179.0" styleClass="Text-field" stylesheets="@Scene.css" />
+        <Label layoutX="39.0" layoutY="145.0" stylesheets="@css.css" text="Type :" />
+        <!--ComboBox fx:id="typa" layoutX="180.0" layoutY="146.0" prefHeight="26.0" prefWidth="179.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Ranked" />
+                    <String fx:value="Custom" />
+                    <String fx:value="Normal" />
+                </FXCollections>
+            </items>
+        </ComboBox-->
+        <Label layoutX="38.0" layoutY="195.0" stylesheets="@css.css" text="Description :" />
+        <TextField fx:id="descriptionTextField" layoutX="180.0" layoutY="196.0" prefHeight="26.0" prefWidth="179.0" styleClass="Text-field" stylesheets="@Scene.css" />
+        <Label layoutX="48.0" layoutY="300.0" stylesheets="@css.css" text="Date :" />
+        <DatePicker fx:id="dateDatePicker" layoutX="180.0" layoutY="301.0" prefHeight="26.0" prefWidth="179.0" styleClass="date-picker" stylesheets="@Scene.css" />
+        <Label layoutX="43.0" layoutY="250.0" stylesheets="@css.css" text="Heure :" />
+
+        <HBox spacing="5" />
+        <Label layoutX="39.0" layoutY="350.0" stylesheets="@css.css" text="Équipe 1 :" />
+        <ComboBox fx:id="equipe1ComboBox" layoutX="180.0" layoutY="346.0" prefHeight="28.0" prefWidth="179.0" styleClass="combo-box" stylesheets="@Scene.css" />
+        <Label layoutX="39.0" layoutY="400.0" stylesheets="@css.css" text="Équipe 2 :" />
+        <ComboBox fx:id="equipe2ComboBox" layoutX="180.0" layoutY="396.0" prefHeight="26.0" prefWidth="179.0" styleClass="combo-box" stylesheets="@Scene.css" />
+        <Label layoutX="39.0" layoutY="450.0" prefHeight="29.0" prefWidth="83.0" stylesheets="@css.css" text="Arbitre :" />
+        <ComboBox fx:id="arbitreComboBox" layoutX="180.0" layoutY="446.0" prefHeight="26.0" prefWidth="179.0" styleClass="combo-box" stylesheets="@Scene.css" />
+
+
+        <Button fx:id="addButton" layoutX="201.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleModifierButtonAction" prefHeight="47.0" prefWidth="102.0" style="-fx-background-color: transparent;" styleClass="rnd" stylesheets="@Style.css">
+            <graphic>
+                <!-- Assuming you have an ImageView for your icon -->
+                <ImageView fitHeight="47" fitWidth="102">
+                    <!-- Replace 'icon.png' with the path to your icon image -->
+                    <Image url="pen.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="heureTextField" layoutX="180.0" layoutY="251.0" prefHeight="26.0" prefWidth="60.0" promptText="HH" styleClass="Text-field" stylesheets="@Scene.css" />
+        <TextField fx:id="minTextField" layoutX="270.0" layoutY="251.0" prefHeight="26.0" prefWidth="60.0" promptText="mm" styleClass="Text-field" stylesheets="@Scene.css" />
+        <Label layoutX="250.0" layoutY="255.0" text=":" />
+    </children>
+</AnchorPane>

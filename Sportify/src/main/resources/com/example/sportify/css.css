@@ -1,0 +1,47 @@
+/* Styliser les TextField */
+.Text-field {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-border-color: #999999; /* Couleur de la bordure */
+    -fx-border-radius: 3px; /* Rayon de la bordure */
+    -fx-padding: 8px; /* Espacement intérieur */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Styliser les ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-border-color: #999999; /* Couleur de la bordure */
+    -fx-border-radius: 3px; /* Rayon de la bordure */
+    -fx-padding: 8px; /* Espacement intérieur */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Styliser les DatePicker */
+.date-picker {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-border-color: #999999; /* Couleur de la bordure */
+    -fx-border-radius: 3px; /* Rayon de la bordure */
+    -fx-padding: 8px; /* Espacement intérieur */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+/* Styliser les options dans le ComboBox */
+.combo-box .list-cell {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-font-family: Arial, sans-serif; /* Police de caractères */
+}
+/* Styliser les Labels */
+/* Styliser les Labels */
+.label {
+    -fx-font-size: 16px; /* Taille de police */
+    -fx-font-weight: bold; /* Gras */
+    -fx-text-fill: white; /* Couleur du texte (rouge) */
+    -fx-padding: 5px; /* Espacement intérieur */
+    -fx-font-family: "Segoe UI", Arial, sans-serif; /* Police de caractères */
+}
+
+

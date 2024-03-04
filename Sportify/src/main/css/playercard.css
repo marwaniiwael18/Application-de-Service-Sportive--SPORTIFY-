@@ -1,0 +1,6 @@
+.rounded-vbox {
+    -fx-background-color: white; /* Set your desired background color */
+    -fx-background-radius: 10%; /* Set the percentage for rounded corners */
+    -fx-border-color: black; /* Set border color */
+    -fx-border-width: 1px; /* Set border width */
+}

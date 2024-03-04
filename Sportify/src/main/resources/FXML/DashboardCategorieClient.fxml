@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategorieClientController">
+    <children>
+        <AnchorPane layoutX="94.0" layoutY="62.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <right>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                    </right>
+                    <bottom>
+                        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Text fill="#e7e7e7" layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.2297477722168">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                </Text>
+                                <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="628.0" fitWidth="1340.0" layoutX="-303.0" nodeOrientation="INHERIT" opacity="0.55" pickOnBounds="true">
+                                    <image>
+                                        <Image url="https://i.ibb.co/ts00Xsh/background-sportify.png" />
+                                    </image>
+                                </ImageView>
+
+                                <Button fx:id="CreateEquipe" layoutX="896.0" layoutY="77.0" onAction="#Create" style="-fx-background-color: #333333; -fx-text-fill: white;" text="Create Equipe" />
+                                <Line endX="1635.4927978515625" endY="-6.999997138977051" layoutX="-363.0" layoutY="3.0" startX="363.0000305175781" startY="-6.999997138977051" stroke="#fff6f6" />
+                                <ListView fx:id="categoriesListView" layoutX="148.0" layoutY="138.0" prefHeight="401.0" prefWidth="846.0" />
+                                <Button fx:id="statButton" layoutX="887.0" layoutY="39.0" mnemonicParsing="false" onAction="#navigateToStatPage" style="-fx-background-color: #333333; -fx-text-fill: white;" text="Consulter Statistique" />
+                                <ImageView fx:id="qrCodeImageView" fitHeight="100" fitWidth="100" layoutX="14.0" layoutY="2.0" />
+                                <Label layoutX="130.0" layoutY="32.0" prefHeight="32.0" prefWidth="181.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white; -fx-background-color: #4CAF50; -fx-padding: 8px; -fx-border-radius: 5px;" text="Check more categories" />
+
+                            </children>
+                        </AnchorPane>
+                    </bottom>
+               <top>
+            
+                                                                          <TextField fx:id="search" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#searchForCategorie" prefHeight="60.0" prefWidth="770.0" promptText="Rechercher" BorderPane.alignment="CENTER" />
+               </top>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #000000, #008000);
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-control-inner-background: rgba(0, 0, 0, 0.5);
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(0, 128, 0, 0.5);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(0, 128, 0, 0.8);
+}

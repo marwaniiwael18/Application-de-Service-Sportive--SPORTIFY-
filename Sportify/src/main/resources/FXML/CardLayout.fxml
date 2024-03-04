@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="114.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/807f757c-tennis-gf8a2b0441_1920-768x513.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="185.0" prefWidth="193.0">
+         <children>
+            <Label fx:id="NomSport" prefHeight="44.0" prefWidth="256.0" text="Sports">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Description" prefHeight="41.0" prefWidth="209.0" text="Description:" />
+            <Label fx:id="titleLabel" />
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets left="10.0" top="10.0" />
+   </padding>
+</HBox>

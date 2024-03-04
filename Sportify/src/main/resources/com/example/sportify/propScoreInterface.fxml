@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="473.0" prefWidth="750.0" style="-fx-background-color: #030E14;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.PropScoreInterfaceController">
+   <children>
+      <ImageView fitHeight="526.0" fitWidth="759.0" layoutX="-3.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="https://i.ibb.co/s28GZQT/CUSTOMIZABLE-SPORTS-SCOREBOARD-Made-with-Poster-My-Wall.jpg" />
+         </image>
+      </ImageView>
+      <Button id="yellow" fx:id="save_btn" layoutX="382.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="58.0" prefWidth="191.0" stylesheets="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/css/stylesheet.css" text="ENREGISTRER" />
+      <Button id="yellow" fx:id="annuler_btn" layoutX="215.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="58.0" prefWidth="167.0" stylesheets="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/css/stylesheet.css" text="Annuler" />
+      <TextField fx:id="scoreequipe1" alignment="CENTER" layoutX="65.0" layoutY="94.0" prefHeight="51.0" prefWidth="45.0" promptText="2" style="-fx-background-color: transparent;" text="1">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="scoreequipe2" alignment="CENTER" layoutX="634.0" layoutY="94.0" prefHeight="51.0" prefWidth="58.0" promptText="2" style="-fx-background-color: transparent;" text="2">
+         <font>
+            <Font name="Montserrat Bold" size="24.0" />
+         </font>
+      </TextField>
+      <Text fx:id="equipe2" fill="WHITE" fontSmoothingType="LCD" layoutX="435.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPE 2" textAlignment="CENTER" wrappingWidth="217.90155029296875">
+         <font>
+            <Font name="Gilroy-ExtraBold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="equipe1" fill="WHITE" layoutX="104.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPE 1" textAlignment="CENTER" wrappingWidth="217.90155029296875">
+         <font>
+            <Font name="Gilroy-ExtraBold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

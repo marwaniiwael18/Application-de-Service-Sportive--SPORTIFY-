@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="defaultLayer" prefHeight="565.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.AuthentificationView">
+   <children>
+      <AnchorPane fx:id="animLayer" prefHeight="565.0" prefWidth="386.0" style="-fx-background-color: linear-gradient(#000000, #4CBB17);">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="226.0" layoutX="16.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/bgauth.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="swapbtn" layoutX="121.0" layoutY="263.0" mnemonicParsing="false" onAction="#swapForm" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #121212;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpBtn" layoutX="121.0" layoutY="263.0" mnemonicParsing="false" onAction="#signUpForm" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #121212;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="161.0" fitWidth="193.0" layoutX="113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="varLB" layoutX="95.0" layoutY="194.0" text="Welcome Back!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="helloLB" layoutX="74.0" layoutY="194.0" text="Welcome to Sportify" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainLayer" layoutX="386.0" prefHeight="565.0" prefWidth="689.0">
+         <children>
+            <VBox layoutX="39.0" layoutY="115.0" prefHeight="372.0" prefWidth="217.0" spacing="35.0">
+               <children>
+                  <TextField fx:id="tfnom" promptText="Nom" />
+                  <TextField fx:id="tfemail" promptText="Email" />
+                  <PasswordField fx:id="tfmpd" promptText="Mot de passe" />
+                  <TextField fx:id="tfimage" promptText="Image" />
+                  <ComboBox fx:id="cbrole" prefHeight="25.0" prefWidth="220.0" promptText="Role" />
+                  <ImageView fx:id="imguser" fitHeight="132.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox layoutX="373.0" layoutY="115.0" prefHeight="322.0" prefWidth="249.0" spacing="35.0">
+               <children>
+                  <TextField fx:id="tfprenom" promptText="Prenom" />
+                  <TextField fx:id="tfadresse" promptText="Adresse" />
+                  <DatePicker fx:id="dpdate" prefHeight="25.0" prefWidth="300.0" promptText="Date de naissance" />
+                  <Button fx:id="uploadbtn" mnemonicParsing="false" onAction="#uploadImage" text="Upload" />
+               </children>
+            </VBox>
+            <Button fx:id="signUpBtn1" layoutX="265.0" layoutY="473.0" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #121212;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpBtn11" layoutX="259.0" layoutY="333.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #121212;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <VBox layoutX="222.0" layoutY="147.0" prefHeight="124.0" prefWidth="226.0" spacing="35.0">
+               <children>
+                  <TextField fx:id="tfloginemail" promptText="Email" />
+                  <PasswordField fx:id="tfloginmdp" promptText="Mot de passe" />
+               </children>
+            </VBox>
+            <ImageView fx:id="icon1" fitHeight="31.0" fitWidth="34.0" layoutX="5.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-nom-52.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon2" fitHeight="31.0" fitWidth="34.0" layoutX="6.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-mail-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon3" fitHeight="31.0" fitWidth="34.0" layoutX="6.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-mot-de-passe-52.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon4" fitHeight="31.0" fitWidth="34.0" layoutX="6.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-nom-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon5" fitHeight="31.0" fitWidth="34.0" layoutX="338.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-nom-52.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon6" fitHeight="31.0" fitWidth="34.0" layoutX="333.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-pays-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon7" fitHeight="31.0" fitWidth="34.0" layoutX="341.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="iconlogin1" fitHeight="31.0" fitWidth="34.0" layoutX="186.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-mail-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iconlogin2" fitHeight="31.0" fitWidth="34.0" layoutX="186.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icons8-mot-de-passe-52.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labeltitre" layoutX="288.0" layoutY="36.0" text="Login">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <HBox layoutX="603.0" layoutY="28.0" prefHeight="16.0" prefWidth="62.0" spacing="10.0">
+               <children>
+                  <Circle fx:id="reduceBtn" fill="#27c941" onMouseClicked="#reduceOnClick" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#fdbb2d" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="closeBtn" fill="#fc5d57" onMouseClicked="#closeOnClick" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Button fx:id="btnForgot" layoutX="334.0" layoutY="263.0" mnemonicParsing="false" onAction="#gotoforgotPassword" prefHeight="16.0" prefWidth="119.0" style="-fx-background-color: #121212;" text="Forgot password?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

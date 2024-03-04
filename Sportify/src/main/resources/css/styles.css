@@ -1,0 +1,111 @@
+.Title{
+    -fx-font-size: 2em;
+    -fx-text-fill: #016A91;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #808080;
+    -fx-pref-height: 50;
+    -fx-pref-width: 50px;
+    -fx-padding: 0 10;
+    -fx-margin: 0 0 10 0;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+}
+
+
+
+.text Text{
+    -fx-pref-height: 250;
+
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+
+}
+
+.form_container VBox{
+    -fx-border-image-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+
+
+}
+.black-background {
+    -fx-background-color: black;
+}
+
+.form_container TextField{
+    -fx-pref-height: 250;
+
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+}
+
+.btn Button {
+    -fx-background-color: linear-gradient(to right, #333333, #666666);
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 3);
+    -fx-pref-width: 150px;
+    -fx-pref-height: 75px;
+    -fx-font-size: 1.8em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-translate-x: 50%;
+    -fx-translate-y: 50%;
+}
+
+
+.btn Button:hover{
+    -fx-cursor: hand;
+}
+.menu-button {
+    -fx-background-color: linear-gradient(to right, #333333, #666666);
+    -fx-effect: dropshadow(three-pass-box, #333333, 3, 0, 0, 3);
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+}
+
+.menu-button .label {
+    -fx-text-fill: white;
+}
+
+.menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.menu-button .menu-item {
+    -fx-padding: 5 20;
+    -fx-text-fill: black;
+}
+
+.menu-button .menu-item:hover {
+    -fx-background-color: #DDDDDD;
+}
+
+
+.menu-button .menu-item:selected {
+    -fx-background-color: #666666;
+    -fx-text-fill: white;
+}
+.menu-item {
+    -fx-text-fill: black; /* Set text color to black */
+}
+
+/* Styling for selected MenuItem */
+.menu-item:selected {
+    -fx-background-color: #666666; /* Set background color of selected item */
+    -fx-text-fill: white; /* Set text color of selected item */
+}
+
+
+
+
+

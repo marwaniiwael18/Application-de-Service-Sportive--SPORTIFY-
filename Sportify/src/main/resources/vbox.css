@@ -1,0 +1,17 @@
+#framelayout {
+    -fx-background-color: #333333; /* Couleur de fond sombre */
+    -fx-padding: 20px; /* Espacement intérieur */
+    -fx-spacing: 10px; /* Espacement entre les enfants */
+}
+
+#framelayout .text-field {
+    -fx-background-color: #666666; /* Couleur de fond des champs de texte */
+    -fx-text-fill: #FFFFFF; /* Couleur du texte */
+}
+
+#framelayout .button {
+    -fx-background-color: #007ACC; /* Couleur de fond des boutons */
+    -fx-text-fill: #FFFFFF; /* Couleur du texte des boutons */
+}
+
+/* Autres styles personnalisés selon vos besoins */

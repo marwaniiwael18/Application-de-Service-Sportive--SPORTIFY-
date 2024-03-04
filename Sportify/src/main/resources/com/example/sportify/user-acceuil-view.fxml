@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.UserAcceuilView">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Text fill="#e7e7e7" layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.2297477722168">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="628.0" fitWidth="1340.0" layoutX="-303.0" nodeOrientation="INHERIT" opacity="0.55" pickOnBounds="true">
+               <image>
+                  <Image url="@img/background-sportify.png" />
+               </image>
+            </ImageView>
+            <Line endX="1635.4927978515625" endY="-6.999997138977051" layoutX="-363.0" layoutY="3.0" startX="363.0000305175781" startY="-6.999997138977051" stroke="#fff6f6" />
+            <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="500.0" layoutX="501.0" layoutY="94.0" />
+            <Text fill="WHITE" layoutX="22.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPORTIFY: WELCOME ABOARD" wrappingWidth="414.359375">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consider this your invite to join the greatest crew in the galaxy">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reCAPTCHA Page</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcb-4YpAAAAALghGWTcQBxwwD9fu6E0YcfucjQr"></script>
+
+</head>
+<body>
+<script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('YOUR_SITE_KEY', {action: 'ACTION_NAME'});
+                // Utilisez le jeton reCAPTCHA comme nécessaire, par exemple, soumettez-le à votre serveur pour validation.
+            });
+        }
+    </script></body>
+</html>

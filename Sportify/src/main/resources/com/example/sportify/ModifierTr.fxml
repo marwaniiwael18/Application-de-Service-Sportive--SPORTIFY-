@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.ModifierTrController">
+   <children>
+      <AnchorPane layoutX="94.0" layoutY="62.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="90.0" prefWidth="1088.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="65.0" layoutY="-1.6" prefHeight="102.0" prefWidth="1282.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <ImageView fitHeight="72.0" fitWidth="83.0" layoutX="1050.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="1140.0" layoutY="19.0" prefHeight="37.0" prefWidth="141.0" text="wael" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="251.0" layoutY="24.0" prefHeight="54.0" prefWidth="77.0" text="Acceuil" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="758.0" layoutY="34.0" prefHeight="35.0" prefWidth="50.0" text="EQUIPE" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="407.0" layoutY="37.0" prefHeight="29.0" prefWidth="104.0" text="RESERVATIONS" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="336.0" layoutY="25.0" prefHeight="54.0" prefWidth="71.0" text="PROFILE" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="848.0" layoutY="36.0" prefHeight="30.0" prefWidth="89.0" text="EVENEMENTS" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="1140.0" layoutY="38.0" prefHeight="37.0" prefWidth="57.0" text="Equibe1" textAlignment="CENTER" textFill="#246923">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="548.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #64dd17;" text="Rechercher " />
+                              <Line endX="-20.659069061279297" endY="-27.53048324584961" layoutX="258.0" layoutY="61.0" rotate="115.6" startX="-76.0" strokeWidth="2.0">
+                                 <stroke>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </stroke>
+                              </Line>
+                              <ImageView fitHeight="76.0" fitWidth="122.0" layoutX="39.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="https://i.ibb.co/2jgVfGT/logo-SPORTIFY-resize.png" />
+                                 </image>
+                              </ImageView>
+                              <Line endX="100.0" layoutX="60.0" layoutY="102.0" startX="-100.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <AnchorPane prefHeight="611.0" prefWidth="1255.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#e7e7e7" layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.2297477722168">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="628.0" fitWidth="1340.0" layoutX="-303.0" nodeOrientation="INHERIT" opacity="0.55" pickOnBounds="true">
+                           <image>
+                              <Image url="https://i.ibb.co/ts00Xsh/background-sportify.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane layoutX="1037.0" layoutY="-4.8" prefHeight="635.0" prefWidth="245.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="1037.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-5.0">
+                           <children>
+                              <Label layoutX="14.0" prefHeight="54.0" prefWidth="143.0" text="NOTIFICATIONS" textAlignment="CENTER" textFill="#707070">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="357.0" prefHeight="54.0" prefWidth="157.0" text="ABOUT" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="411.0" prefHeight="54.0" prefWidth="157.0" text="CONTACT US" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="461.0" prefHeight="54.0" prefWidth="157.0" text="AIDE" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="32.0" layoutY="109.0" prefHeight="27.0" prefWidth="174.0" text="Mark099" />
+                              <TextField layoutX="30.0" layoutY="163.0" prefHeight="26.0" prefWidth="174.0" text="Mark099" />
+                              <Line endX="79.199951171875" layoutX="116.0" layoutY="288.0" startX="-76.0" strokeWidth="2.0">
+                                 <stroke>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </stroke>
+                              </Line>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="516.0" prefHeight="54.0" prefWidth="157.0" text="Â© 2024 Sportify.com" textFill="#7e7f81">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="551.0" prefHeight="54.0" prefWidth="157.0" text="DÃ©veloppÃ© par :  FLAME" textFill="#7e7f81">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="302.0" prefHeight="54.0" prefWidth="157.0" text="DECONNEXION" textFill="#64b759">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="32.0" layoutY="54.0" prefHeight="27.0" prefWidth="174.0" text="Mark099" />
+                              <TextField layoutX="30.0" layoutY="212.0" prefHeight="26.0" prefWidth="174.0" text="Mark099" />
+                           </children>
+                        </AnchorPane>
+                        <Line endX="1635.4927978515625" endY="-6.999997138977051" layoutX="-363.0" layoutY="3.0" startX="363.0000305175781" startY="-6.999997138977051" stroke="#fff6f6" />
+                        <AnchorPane layoutX="395.0" layoutY="109.0" prefHeight="370.0" prefWidth="361.0">
+                           <children>
+                              <Label layoutX="30.0" layoutY="187.0" text="Localisation" textFill="WHITE" />
+                              <Label layoutX="29.0" layoutY="95.0" text="Nom" textFill="WHITE" />
+                              <Label layoutX="30.0" layoutY="139.0" text="Type__surface" textFill="WHITE" />
+                              <Label layoutX="33.0" layoutY="238.0" text="Prix" textFill="WHITE" />
+                              <TextField fx:id="typet" layoutX="118.0" layoutY="135.0" />
+                              <TextField fx:id="loclt" layoutX="118.0" layoutY="183.0" />
+                              <TextField fx:id="nomt" layoutX="118.0" layoutY="91.0" />
+                              <TextField fx:id="prixt" layoutX="118.0" layoutY="234.0" />
+                              <Button fx:id="modifiertr" layoutX="141.0" layoutY="282.0" mnemonicParsing="false" onAction="#modifiertr" style="-fx-background-color: #64dd17;" text="Modifier" />
+                              <Label layoutX="105.0" layoutY="25.0" prefHeight="29.0" prefWidth="101.0" text="MODIFICATION" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

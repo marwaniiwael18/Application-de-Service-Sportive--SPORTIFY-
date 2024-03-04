@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="632.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.JoueurTeamVScontroller">
+   <children>
+      <ImageView fitHeight="632.0" fitWidth="1023.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/wassim/Desktop/PIDEV/dev/Sportify/src/image/teams%20VS.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="detailsVbox" layoutX="97.0" layoutY="14.0" prefHeight="70.0" prefWidth="671.0" />
+      <TextField fx:id="nomEquipe1" alignment="CENTER" editable="false" layoutX="97.0" layoutY="93.0" prefHeight="45.0" prefWidth="248.0" style="-fx-background-color: #9e1010; -fx-border-color: white; -fx-text-fill: white;" text="EQUIPE 1">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nomEquipe2" alignment="CENTER" editable="false" layoutX="686.0" layoutY="93.0" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #071094; -fx-border-color: white; -fx-text-fill: white;" text="EQUIPE 2">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </TextField>
+      <VBox fx:id="PlayersBox" alignment="CENTER" fillWidth="false" layoutX="129.0" layoutY="123.0" prefHeight="310.0" prefWidth="184.0" />
+      <Text fill="WHITE" layoutX="178.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOUEURS" wrappingWidth="86.13673400878906">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <VBox fx:id="PlayersBoxE2" alignment="CENTER" fillWidth="false" layoutX="726.0" layoutY="179.0" prefHeight="310.0" prefWidth="184.0" />
+      <Text fill="WHITE" layoutX="782.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOUEURS" wrappingWidth="86.13673400878906">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="weatherButton" layoutX="807.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#fetchWeather" prefHeight="46.0" prefWidth="129.0" text="WEATHER" textFill="#2d941d">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="localisationButton" contentDisplay="RIGHT" layoutX="641.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#showTerrainLocation" prefHeight="46.0" prefWidth="155.0" text="Localisation Terrain" textFill="#2d941d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.AffichageUsers" >
+
+    <children>
+        <AnchorPane layoutX="94.0" layoutY="62.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="90.0" prefWidth="1088.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="130.0" prefWidth="1720.0" style="-fx-background-color: BLACK;">
+                                    <children>
+                                        <ImageView fitHeight="106.0" fitWidth="72.0" layoutX="875.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="https://com.example.sportify.img.freepik.com/photos-gratuite/outils-sport_53876-138077.jpg" />
+                                            </image>
+                                        </ImageView>
+
+                                        <Button fx:id="rechercherButton" layoutX="441.0" layoutY="37.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #64dd17;" text="Rechercher " />
+                                        <Button fx:id="deconnexionButton" layoutX="958.0" layoutY="36.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: #64dd17;" text="Déconnexion " onAction="#deconnexion"/>
+                                        <Button fx:id="accueilButton" layoutX="61.0" layoutY="38.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="97.0" style="-fx-background-color: #64dd17;" text="Acceuil" />
+                                        <Button fx:id="profilButton" layoutX="190.0" layoutY="38.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="97.0" style="-fx-background-color: #64dd17;" text="Profil" />
+                                        <Button fx:id="equipeButton" layoutX="636.0" layoutY="37.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="97.0" style="-fx-background-color: #64dd17;" text="Equipe" />
+                                        <Button fx:id="evenementButton" layoutX="746.0" layoutY="37.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="97.0" style="-fx-background-color: #64dd17;" text="Evénement" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <right>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                    </right>
+                    <bottom>
+                        <AnchorPane prefHeight="664.0" prefWidth="1235.0" style="-fx-background-color: GREEN;" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutY="52.0" prefHeight="489.0" prefWidth="954.0" style="-fx-background-color: #080753;" AnchorPane.bottomAnchor="29.600000000000023" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="307.20000000000005" AnchorPane.topAnchor="52.0">
+                                    <children>
+                                        <TableView fx:id="userTableView" layoutX="88.0" layoutY="60.0" prefHeight="287.0" prefWidth="1077.0" onMouseClicked="#handleRowClick">
+                                            <columns>
+                                                <TableColumn fx:id="nomColumn" prefWidth="75.0" text="Nom" />
+                                                <TableColumn fx:id="prenomColumn" prefWidth="84.0" text="Prenom" />
+                                                <TableColumn fx:id="emailColumn" prefWidth="181.60000610351562" text="Email" />
+                                                <TableColumn fx:id="dateNaissanceColumn" prefWidth="149.60006713867188" text="Date De Naissance" />
+                                                <TableColumn fx:id="niveauCompetenceColumn" prefWidth="181.60000610351562" text="Niveau de Compétence" />
+                                                <TableColumn fx:id="roleColumn" prefWidth="75.0" text="Role" />
+                                                <TableColumn fx:id="adresseColumn" prefWidth="181.60000610351562" text="Adresse" />
+                                                <TableColumn fx:id="imageColumn" prefWidth="181.60000610351562" text="Image" />
+
+                                            </columns>
+                                        </TableView>
+
+                                        <TextField fx:id="idField" layoutX="172.0" layoutY="400.0" prefHeight="26.0" prefWidth="130.0" text="nom" />
+
+                                        <TextField fx:id="nomField" layoutX="172.0" layoutY="400.0" prefHeight="26.0" prefWidth="130.0" text="nom" />
+                                        <TextField fx:id="prenomField" layoutX="168.0" layoutY="437.0" prefHeight="26.0" prefWidth="137.0" text="prenom" />
+                                        <TextField fx:id="emailField" layoutX="167.0" layoutY="475.0" prefHeight="26.0" prefWidth="138.0" text="email" />
+                                        <TextField fx:id="imageField" layoutX="347.0" layoutY="398.0" prefHeight="30.0" prefWidth="177.0" text="image" />
+                                        <Button fx:id="importerImageButton" layoutX="330.0" layoutY="520.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #64dd17;" text="Importer" onAction="#importerImage" />
+
+                                        <TextField fx:id="dateNaissanceField" layoutX="347.0" layoutY="436.0" prefHeight="26.0" prefWidth="178.0" text="Date_De_Naissance " />
+                                        <TextField fx:id="niveauCompetenceField" layoutX="345.0" layoutY="475.0" prefHeight="26.0" prefWidth="182.0" text="niveau_competence" />
+                                        <TextField fx:id="roleField" layoutX="570.0" layoutY="400.0" prefHeight="26.0" prefWidth="190.0" text="role" />
+                                        <TextField fx:id="adresseField" layoutX="570.0" layoutY="437.0" prefHeight="26.0" prefWidth="190.0" text="adresse" />
+                                        <PasswordField fx:id="passwordField"  layoutX="571.0" layoutY="480.0" prefHeight="26.0" prefWidth="188.0" text="Adresse" />
+
+                                        <Button fx:id="ajouterButton" layoutX="814.0" layoutY="388.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #64dd17;" text="Ajouter " onAction="#ajouterUtilisateur" />
+                                        <Button fx:id="modifierButton" layoutX="814.0" layoutY="436.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #64dd17;" text="Modifier " onAction="#updateUser" />
+                                        <Button fx:id="supprimerButton" layoutX="814.0" layoutY="475.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #64dd17;" text="Supprimer " onAction="#deleteUser" />
+                                    </children>
+                                </AnchorPane>
+
+                            </children>
+                        </AnchorPane>
+                    </bottom>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

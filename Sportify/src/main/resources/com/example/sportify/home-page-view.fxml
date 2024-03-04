@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.HomePageView">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="1100.0">
+         <center>
+            <AnchorPane prefHeight="656.0" prefWidth="1188.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1255.0">
+                     <children>
+                        <AnchorPane layoutX="94.0" layoutY="62.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <AnchorPane prefHeight="90.0" prefWidth="1088.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <AnchorPane layoutX="65.0" layoutY="-1.6" prefHeight="102.0" prefWidth="1282.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                                             <children>
+                                                <ImageView fx:id="imgprofile" fitHeight="72.0" fitWidth="83.0" layoutX="1050.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Line endX="-20.659069061279297" endY="-27.53048324584961" layoutX="258.0" layoutY="61.0" rotate="115.6" startX="-76.0" strokeWidth="2.0">
+                                                   <stroke>
+                                                      <LinearGradient endX="1.0" endY="1.0">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="1.0" blue="1.0" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </stroke>
+                                                </Line>
+                                                <ImageView fitHeight="76.0" fitWidth="122.0" layoutX="39.0" layoutY="13.0" onMouseClicked="#gotoAfficherUser" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/logo.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Line endX="100.0" layoutX="60.0" layoutY="102.0" startX="-100.0" />
+                                                <Label fx:id="helloLB" layoutX="443.0" layoutY="31.0" prefHeight="31.0" prefWidth="275.0" text="Welcome to Sportify" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="26.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </top>
+                                 <right>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </right>
+                                 <bottom>
+                                    <AnchorPane prefHeight="611.0" prefWidth="1255.0" style="-fx-background-color: BLACK;" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Text fill="#e7e7e7" layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.2297477722168">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView blendMode="SRC_ATOP" cache="true" fitHeight="628.0" fitWidth="1340.0" layoutX="-303.0" nodeOrientation="INHERIT" opacity="0.55" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/background-sportify.png" />
+                                             </image>
+                                          </ImageView>
+                                          <AnchorPane layoutX="1037.0" layoutY="-4.8" prefHeight="635.0" prefWidth="245.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="1037.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-5.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="357.0" prefHeight="54.0" prefWidth="157.0" text="ABOUT" textFill="#64b759">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="411.0" prefHeight="54.0" prefWidth="157.0" text="CONTACT US" textFill="#64b759">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="461.0" prefHeight="54.0" prefWidth="157.0" text="AIDE" textFill="#64b759">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Line endX="79.199951171875" layoutX="116.0" layoutY="288.0" startX="-76.0" strokeWidth="2.0">
+                                                   <stroke>
+                                                      <LinearGradient endX="1.0" endY="1.0">
+                                                         <stops>
+                                                            <Stop>
+                                                               <color>
+                                                                  <Color red="0.9098039269447327" green="0.686274528503418" blue="0.27450981736183167" />
+                                                               </color>
+                                                            </Stop>
+                                                            <Stop offset="1.0">
+                                                               <color>
+                                                                  <Color red="1.0" green="1.0" blue="1.0" />
+                                                               </color>
+                                                            </Stop>
+                                                         </stops>
+                                                      </LinearGradient>
+                                                   </stroke>
+                                                </Line>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="516.0" prefHeight="54.0" prefWidth="157.0" text="© 2024 Sportify.com" textFill="#7e7f81">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="551.0" prefHeight="54.0" prefWidth="157.0" text="Développé par :  FLAME" textFill="#7e7f81">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="302.0" onMouseClicked="#logout" prefHeight="54.0" prefWidth="157.0" text="SIGNUP" textFill="#64b759">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="207.0" fitWidth="166.0" layoutX="30.0" layoutY="48.0" onMouseClicked="#gotoAfficherUser" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/logo.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                          <Line endX="1635.4927978515625" endY="-6.999997138977051" layoutX="-363.0" layoutY="3.0" startX="363.0000305175781" startY="-6.999997138977051" stroke="#fff6f6" />
+                                          <Label fx:id="helloLB1" layoutX="141.0" layoutY="254.0" text="Réserver un terrain  " textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="helloLB2" layoutX="230.0" layoutY="323.0" text="ET" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="helloLB11" layoutX="117.0" layoutY="378.0" text="Profit avec tes amies" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="signUpBtn" layoutX="192.0" layoutY="449.0" mnemonicParsing="false" onAction="#gotoAuthpage" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #121212;" text="Sign Up" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="197.0" fitWidth="436.0" layoutX="491.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/360_F_513761212_i3z6vHUNV0bQ8pjkBGO3yrpLg8zs4mFK.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

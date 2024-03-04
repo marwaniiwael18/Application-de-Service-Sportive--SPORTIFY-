@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="interfaceranked" prefHeight="632.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.RommrankedController">
+   <children>
+      <ImageView fitHeight="632.0" fitWidth="1023.0" pickOnBounds="true">
+         <image>
+            <Image url="https://i.ibb.co/ts00Xsh/background-sportify.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="cardvidedroit" layoutX="700.0" layoutY="140.0" prefHeight="6.0" prefWidth="7.0" />
+      <VBox fx:id="cardvide" layoutX="10.0" layoutY="140.0" prefHeight="6.0" prefWidth="7.0" />
+      <VBox fx:id="PlayerCardd" layoutX="360.0" layoutY="140.0" prefHeight="6.0" prefWidth="7.0" />
+      <Button fx:id="searchmatch" layoutX="443.0" layoutY="525.0" mnemonicParsing="false" onMouseClicked="#searchButton" prefHeight="69.0" prefWidth="206.0" style="-fx-border-radius: 7%; -fx-background-radius: 20%; -fx-background-color: #000000; -fx-border-color: green;" text="Rechercher Match " textFill="#d0d0d0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

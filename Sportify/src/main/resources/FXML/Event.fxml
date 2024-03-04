@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.AppEvent">
+    <children>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" style="-fx-background-color: BLACK;">
+                <children>
+
+                    <AnchorPane layoutX="1037.0" layoutY="-4.8" prefHeight="605.0" prefWidth="197.0" style="-fx-background-color: #141414;" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="1037.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="-5.0" />
+            <AnchorPane layoutX="123.0" layoutY="133.0" prefHeight="200.0" prefWidth="484.0" style="-fx-background-color: #666666;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412.0" layoutY="165.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Publier">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="86.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Post" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="1132.0" AnchorPane.topAnchor="86.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1024.0" style="-fx-background-color: BLACK;">
+               <children>
+                  <AnchorPane layoutX="123.0" layoutY="133.0" prefHeight="200.0" prefWidth="484.0" style="-fx-background-color: #666666;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412.0" layoutY="165.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Publier">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="86.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Post" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="1132.0" AnchorPane.topAnchor="86.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="632.0" fitWidth="1023.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/background-sportify.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" style="-fx-background-color: BLACK;">
+               <children>
+                  <AnchorPane layoutX="123.0" layoutY="133.0" prefHeight="200.0" prefWidth="484.0" style="-fx-background-color: #666666;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="412.0" layoutY="165.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Publier">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="86.0" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #339966;" text="Post" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="1132.0" AnchorPane.topAnchor="86.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="-5.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1023.0" style="-fx-background-color: #006633;">
+                     <children>
+                        <AnchorPane layoutX="123.0" layoutY="133.0" prefHeight="200.0" prefWidth="484.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <Button layoutX="422.0" layoutY="156.0" mnemonicParsing="false" text="Publier" />
+                              <TextField layoutX="29.0" layoutY="36.0" prefHeight="50.0" prefWidth="398.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="86.0" prefHeight="38.0" prefWidth="96.0" style="-fx-background-color: WHITE;" text="Post" textFill="#fffafa" AnchorPane.bottomAnchor="548.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="1119.0" AnchorPane.topAnchor="86.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="1127.5" endY="-7.0" layoutX="-391.0" layoutY="356.0" startX="489.5" startY="-7.0" stroke="#fff6f6" />
+                        <AnchorPane layoutX="123.0" layoutY="409.0" prefHeight="200.0" prefWidth="484.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <Button layoutX="422.0" layoutY="163.0" mnemonicParsing="false" text="Publier" />
+                              <TextField layoutX="14.0" layoutY="42.0" prefHeight="50.0" prefWidth="420.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="363.0" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: WHITE;" text="Commentaire">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+                </children>
+            </AnchorPane>
+    </children>
+</AnchorPane>

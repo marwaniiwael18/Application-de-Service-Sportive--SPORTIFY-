@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="814.0" style="-fx-background-color: #3A2F05;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportify.controller.soloitem">
+   <children>
+      <Label fx:id="rank" alignment="CENTER" prefHeight="23.0" prefWidth="63.0" text="001" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" alignment="CENTER" prefHeight="23.0" prefWidth="250.0" text="WASSIM" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="points" alignment="CENTER" prefHeight="23.0" prefWidth="292.0" text="123" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbrematch" alignment="CENTER" prefHeight="23.0" prefWidth="308.0" text="12" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>
